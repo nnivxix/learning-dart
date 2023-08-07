@@ -23,4 +23,8 @@ Therefore, you don’t need to specify the type of the httpStatusCode variable e
 var variableName;
 ```
 
-By convention, the variable name use `lowerCaseCamel`, see the [examples](./primitives.dart)
+By convention, the variable name use `lowerCaseCamel`, see the [example](./primitives.dart).
+
+### Constant
+
+Use the `const` keyword to define a constant. A constant is an identifier whose value doesn’t change. see the [example](./const.dart).
