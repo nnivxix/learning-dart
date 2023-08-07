@@ -23,11 +23,11 @@ Therefore, you don’t need to specify the type of the httpStatusCode variable e
 var variableName;
 ```
 
-By convention, the variable name use `lowerCaseCamel`, see the [example](./primitives.dart).
+By convention, the variable name use `lowerCaseCamel`, See the [example](./primitives.dart).
 
 ### Constant
 
-Use the `const` keyword to define a constant. A constant is an identifier whose value doesn’t change. see the [example](./const.dart).
+Use the `const` keyword to define a constant. A constant is an identifier whose value doesn’t change. See the [example](./const.dart).
 
 ### Final Keyword
 
@@ -39,4 +39,19 @@ The `final` keyword, is similar like `const` keyword. Unlike the `const` keyword
 
   const String country;
   country = 'Indonesia'; // error
+```
+
+## Function
+
+A function is a reusable unit of code that performs a task. In programming, you often need to perform the same task multiple times. And you don’t want to copy & paste the same code all over places in the program. To do this, you wrap the code in a function and use it instead of copying/pasting the same code. See the [example](./function.dart).
+
+```dart
+void greet(String name) {
+  print('Halo ${name}');
+}
+
+
+void main() {
+  greet('Hanasa'); // Halo Hanasa
+}
 ```
