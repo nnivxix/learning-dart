@@ -28,3 +28,15 @@ By convention, the variable name use `lowerCaseCamel`, see the [example](./primi
 ### Constant
 
 Use the `const` keyword to define a constant. A constant is an identifier whose value doesn’t change. see the [example](./const.dart).
+
+### Final Keyword
+
+The `final` keyword, is similar like `const` keyword. Unlike the `const` keyword, you don’t need to **initialize** the **finalVariable** in the declaration immediately.
+
+```dart
+  final int money;
+  money = 100; // ok
+
+  const String country;
+  country = 'Indonesia'; // error
+```
