@@ -55,3 +55,22 @@ void main() {
   greet('Hanasa'); // Halo Hanasa
 }
 ```
+
+### Named Paramter
+
+Named parameters to make the parameters clear in function calls. Use `{}` to surround the named parameters. By default, named parameters are **optional**. Use the `required` keyword to make them **required**.
+
+```dart
+void connect(String host,
+    {int port = 3306, required String user, required String password}) {
+  print('Connecting to $host on $port using credential $user/$password');
+}
+```
+
+Specify the parameter names when calling a function with named parameters.
+
+```dart
+void main() {
+  connect('localhost', user: 'Hanasa', password: '1z23');
+}
+```
