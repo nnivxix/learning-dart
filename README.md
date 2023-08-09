@@ -173,3 +173,10 @@ An anonymous function is a function that doesn’t have a name. See the [example
 ### Arrow function
 
 If a `function` body has only one line, you can use an arrow function with the following syntax to make it more compact. Use arrow functions for the functions with one line to make the code more concise. See the [example](./arrow_function.dart).
+
+## Class
+
+An object consists of states and behaviors:
+
+- The state describes the values that an object has at a specified time.
+- The behaviors are actions that an object can do to manipulate its state.
