@@ -165,3 +165,7 @@ void main() {
   print(fn(30,20));
 }
 ```
+
+### An anonymous function
+
+An anonymous function is a function that doesn’t have a name.
