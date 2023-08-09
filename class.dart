@@ -4,7 +4,7 @@ class User {
   String username = '';
 
   String greet() {
-    return 'halo ${username}';
+    return 'halo ${this.username}';
   }
 }
 
