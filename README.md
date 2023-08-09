@@ -168,4 +168,8 @@ void main() {
 
 ### An anonymous function
 
-An anonymous function is a function that doesn’t have a name.
+An anonymous function is a function that doesn’t have a name. See the [example](./anonymous_function.dart).
+
+### Arrow function
+
+If a `function` body has only one line, you can use an arrow function with the following syntax to make it more compact. Use arrow functions for the functions with one line to make the code more concise. See the [example](./arrow_function.dart).
