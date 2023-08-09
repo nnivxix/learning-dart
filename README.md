@@ -74,3 +74,94 @@ void main() {
   connect('localhost', user: 'Hanasa', password: '1z23');
 }
 ```
+
+### Dart functions are First-class Citizens
+
+Functions are first-class citizens. This means that you can treat a function as a value of other types. So you can:
+
+- Assign a function to a variable.
+
+```dart
+int add(int x, int y) {
+  return x + y;
+}
+
+void main() {
+  var fn = add;
+  var result = fn(10, 20);
+  print(result); // 30
+}
+```
+
+- Pass a function to another function as an argument.
+
+```dart
+
+bool isOddNumber(int x) {
+  return x % 2 != 0;
+}
+
+bool isEvenNumber(int x) {
+  return x % 2 == 0;
+}
+
+void show(Function fn) {
+  for (int i = 0; i < 10; i++) {
+    if (fn(i)) {
+      print(i);
+    }
+  }
+}
+
+void main() {
+  print("Even numbers:");
+  show(isEvenNumber);
+
+  print("Odd numbers:");
+  show(isOddNumber);
+}
+
+```
+
+Result
+
+```bash
+Even numbers:
+0
+2
+4
+6
+8
+Odd numbers:
+1
+3
+5
+7
+9
+```
+
+- Return a function from a function.
+
+```dart
+add(int x, int y) {
+  return x + y;
+}
+
+subtract(int x, int y) {
+  return x - y;
+}
+
+Function calculation(String op) {
+  if (op == '+') return add;
+  if (op == '-') return subtract;
+  return add;
+}
+
+void main() {
+  var fn = calculation('+');
+  print(fn(10, 20));
+
+  fn = calculation('-');
+  print(fn(30,20));
+}
+```
