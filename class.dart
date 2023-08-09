@@ -3,7 +3,7 @@ class User {
   String password = '';
   String username = '';
 
-  User(this.email, this.password, this.username);
+  User({this.email = '', this.password = '', this.username = ''});
 
   String greet() {
     return 'halo ${this.username}';
@@ -15,7 +15,8 @@ class User {
 }
 
 void main() {
-  var hanasa = User('hanasa@hanasa.com', '1234', 'hanasa');
+  var hanasa =
+      User(email: 'hanasa@hanasa.com', password: '1234', username: 'hanasa');
 
   print(hanasa.email);
   print(hanasa.login());
