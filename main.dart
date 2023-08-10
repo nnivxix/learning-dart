@@ -4,5 +4,5 @@ void main() {
   var hanasa = Player('Slicesauce');
   hanasa.name = 'slice_sauce';
 
-  print(hanasa.name);
+  print(hanasa.status);
 }

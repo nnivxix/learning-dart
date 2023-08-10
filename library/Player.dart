@@ -10,4 +10,6 @@ class Player {
   }
 
   String get name => _name;
+
+  get status => 'your username is ${name} ';
 }
