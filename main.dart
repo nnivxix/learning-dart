@@ -1,6 +1,8 @@
-import 'library/Book.dart';
+import 'library/Player.dart';
 
 void main() {
-  var jees = Book(name: 'Belajar JavaScript', author: 'Hanasa', price: 12000);
-  jees.show();
+  var hanasa = Player('Slicesauce');
+  hanasa.name = 'slice_sauce';
+
+  print(hanasa.name);
 }
