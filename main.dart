@@ -1,13 +1,6 @@
-import 'library/User.dart';
+import 'library/Book.dart';
 
 void main() {
-  var hanasa = User(
-      email: 'hanasa@hanasa.com',
-      password: '1234',
-      username: 'hanasa',
-      note: 'Halo dunia');
-  hanasa.email = 'hanasa@change.com';
-  print(hanasa.email);
-  print(hanasa.userNote());
-  print(hanasa.greet());
+  var jees = Book(name: 'Belajar JavaScript', author: 'Hanasa', price: 12000);
+  jees.show();
 }
